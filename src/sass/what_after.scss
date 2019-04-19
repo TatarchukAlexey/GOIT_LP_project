@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.what{
+    display: flex;
+    align-items: center;
+}
+.what__wrapper{
+    text-align: left;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 182px;
+    text-align: center;
+}
+.list__number-one:before{
+    content: "";
+    background-image: url("../images/01.@1X.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 14px;
+    height: 16px;
+    margin-right: 12px;
+    position: relative;
+    left: -25px;
+    bottom: -40px;
+}
+.list__number-two:before{
+    content: "";
+    background-image: url("../images/02.@1X.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 14px;
+    height: 16px;
+    margin-right: 12px;
+    position: relative;
+    left: -25px;
+    bottom: -40px;
+}
+.list__number-three:before{
+    content: "";
+    background-image: url("../images/03.@1X.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 14px;
+    height: 16px;
+    margin-right: 12px;
+    position: relative;
+    left: -25px;
+    bottom: -40px;
+}
+
+.what__wrapper__title{
+    @include font-style(16,800);
+    text-align: left;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+}
+.what__wrapper__list{
+    list-style: none;
+}
+.what__wrapper__list__item__title{
+    @include font-style(10,900);
+    text-align: left;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 20px;
+    
+}
+.what__wrapper__list__item__subtitle{
+    text-align: left;
+    @include font-style(10,400);
+    margin-top: 8px;
+    
+}
+.what__wrapper__button{
+    width: 180px;
+    margin: 0 auto;
+}
+.what__wrapper__button__text{
+    @include font-style(10,500);
+    text-align: left;
+    margin:33px auto 0;
+    color: $action-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.what__wrapper__button__text:before{
+    content: "";
+    background-image: url("../images/Shape\ 10@1X.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+.what__wrapper__button__btn{
+    width: 166px;
+    text-transform: uppercase;
+    padding: 11px 18px 12px 18px;
+    @include font-style(9,700);
+    background-color: $action-color;
+    color: $label-color;
+    border: none;
+    margin:24px 20px 34px 0;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.what_after__img{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+@media (min-width:480px){
+    .what__wrapper{
+        width: 274px;
+    }
+    .what__wrapper__title{
+        @include font-style(20,800);
+        margin-top: 24px; 
+    }
+    .what__wrapper__list__item__title{
+        @include font-style(15,900);
+    }
+    .what__wrapper__list__item__subtitle{
+        @include font-style(15,400);
+        margin-top: 12px;
+    }
+    .list__number-one:before{
+        left: -35px;
+        bottom: -50px;
+        background-image: url("../images/04.@1X.png");
+        width: 21px;
+        height: 25px;
+    }
+    .list__number-two:before{
+        left: -35px;
+        bottom: -50px;
+        background-image: url("../images/05.@1X.png");
+        width: 21px;
+        height: 25px;
+    }
+    .list__number-three:before{
+        left: -35px;
+        bottom: -50px;
+        background-image: url("../images/06.@1X.png");
+        width: 21px;
+        height: 25px;
+    }
+    .what__wrapper__button{
+        width: 274px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .what__wrapper__button__text{
+        @include font-style(15,500);
+        color: $action-color;
+        margin-top: 50px;
+    }
+    .what__wrapper__button__btn{
+        width: 240px;
+        text-transform: uppercase;
+        padding: 18px 28px;
+        @include font-style(12,900);
+        background-color: $action-color;
+        color: $label-color;
+        border: none;
+        margin: 35px 30px 48px 0;
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+    }
+    .what__wrapper__button__text:before{
+        background-image: url("../images/Shape10@12X.png");
+        width: 11px;
+        height: 18px;
+    }
+}
+@media (min-width:768px) and (max-width:959px){
+    .what{
+        width: 643px;
+        margin: 0 auto;
+    }
+    .what__wrapper{
+        width: 340px;
+        margin:0 50px 0 0;
+    }
+    .what__wrapper__title{
+        @include font-style(28,800);
+        margin:0;
+    }
+    .what__wrapper__list__item{
+        width: 160px;
+    }
+    .what__wrapper__list__item__title{
+        @include font-style(9,800);
+        margin-left:30px;
+        margin-top:0;
+    }
+    .list__number-one:before{
+        left: 0px;
+        bottom: -26px;
+        background-image: url("../images/04.@1X.png");
+        width: 21px;
+        height: 25px;
+    }
+    .list__number-two:before{
+        left: 0px;
+        bottom: -26px;
+        background-image: url("../images/05.@1X.png");
+        width: 21px;
+        height: 25px;
+    }
+    .list__number-three:before{
+        left: 0px;
+        bottom: -26px;
+        background-image: url("../images/06.@1X.png");
+        width: 21px;
+        height: 25px;
+    }
+    .what__wrapper__list__item__subtitle{
+        @include font-style(9,400);
+        margin:14px 0 0 30px;
+        
+    }
+    .what__wrapper__button__text{
+        @include font-style(11,500);
+        color: $action-color;
+        margin:25px 0 15px 0;
+    }
+    .what_after__img{
+        display: block;
+        width: 260px;
+        height: 341px;
+        margin: 55px 0;
+    }
+    .what__wrapper__list{
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        align-content: center;
+        margin-top: 30px;
+    }
+    .what__wrapper__button{
+        width: 160px;
+        margin: 0;
+    }
+    .what__wrapper__button__btn{
+        width: 151px;
+        padding: 11px 17px;
+        @include font-style(9,700);
+        color: $label-color;
+        margin:0 0 0 22px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    }
+.what__wrapper__button__text:before{
+    background-image: url("../images/Shape\ 20@1X.png");
+    width: 20px;
+    height: 18px;
+    margin-right:5px;
+}
+.what-it{
+    width: 50px;
+}
+}
+@media (min-width:960px) and (max-width:1199px){
+    .what{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .what__wrapper{
+        width: 400px;
+        margin:0 76px 0 0;
+    }
+    .what__wrapper__title{
+        @include font-style(32,800);
+        margin:0;
+    }
+    .what__wrapper__list__item{
+        width: 180px;
+    }
+    .what__wrapper__list__item__title{
+        @include font-style(11,800);
+        margin-left:40px;
+        margin-top:0;
+    }
+    .list__number-one:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/07.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .list__number-two:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/08.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .list__number-three:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/09.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .what__wrapper__list__item__subtitle{
+        @include font-style(10,400);
+        margin:9px 0 0 40px;
+        
+    }
+    .what__wrapper__button__text{
+        @include font-style(11,500);
+        color: $action-color;
+        margin:35px 0 15px 0;
+    }
+    .what_after__img{
+        display: block;
+        width: 324px;
+        height: 409px;
+        margin: 69px 0;
+    }
+    .what__wrapper__list{
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        align-content: center;
+        margin-top: 30px;
+    }
+    .what__wrapper__button{
+        width: 174px;
+        margin: 0;
+    }
+    .what__wrapper__button__btn{
+        width: 160px;
+        padding: 11px 17px;
+        @include font-style(9,700);
+        color: $label-color;
+        margin:0 0 0 30px;
+        box-shadow: 0px 3px 4px rgba(0,0,0,0.2);
+    }
+.what__wrapper__button__text:before{
+    background-image: url("../images/Shape\ 10@1X\ \(2\).png");
+    width: 20px;
+    height: 23px;
+    margin-right:10px;
+}
+.what-it{
+    width: 50px;
+}
+}
+@media (min-width:1200px) and (max-width:1439px){
+    .what{
+        width: 715px;
+        margin: 0 auto;
+    }
+    .what__wrapper{
+        width: 375px;
+        margin:0 76px 0 0;
+    }
+    .what__wrapper__title{
+        @include font-style(30,800);
+        margin:0;
+    }
+    .what__wrapper__list__item{
+        width: 178px;
+    }
+    .what__wrapper__list__item__title{
+        @include font-style(11,800);
+        margin-left:40px;
+        margin-top:0;
+    }
+    .list__number-one:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/07.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .list__number-two:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/08.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .list__number-three:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/09.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .what__wrapper__list__item__subtitle{
+        @include font-style(10,400);
+        margin:9px 0 0 40px;
+        
+    }
+    .what__wrapper__button__text{
+        @include font-style(11,500);
+        color: $action-color;
+        margin:31px 0 20px 0;
+    }
+    .what_after__img{
+        display: block;
+        width: 289px;
+        height: 377px;
+        margin: 61px 0;
+    }
+    .what__wrapper__list{
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        align-content: center;
+        margin-top: 30px;
+    }
+    .what__wrapper__button{
+        width: 174px;
+        margin: 0;
+    }
+    .what__wrapper__button__btn{
+        width: 151px;
+        padding: 11px 17px;
+        @include font-style(9,700);
+        color: $label-color;
+        margin:0 0 0 30px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    }
+.what__wrapper__button__text:before{
+    background-image: url("../images/Shape\ 10@1X\ \(2\).png");
+    width: 20px;
+    height: 23px;
+    margin-right:10px;
+}
+.what-it{
+    width: 50px;
+}
+}
+@media (min-width:1440px){
+    .what{
+        width: 858px;
+        margin: 0 auto;
+    }
+    .what__wrapper{
+        width: 428px;
+        margin:0 83px 0 0;
+    }
+    .what__wrapper__title{
+        @include font-style(37,800);
+        margin:0;
+    }
+    .what__wrapper__list__item{
+        width: 180px;
+    }
+    .what__wrapper__list__item__title{
+        @include font-style(12,800);
+        margin-left:40px;
+        margin-top:0;
+    }
+    .list__number-one:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/07.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .list__number-two:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/08.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .list__number-three:before{
+        left: 0px;
+        bottom: -30px;
+        background-image: url("../images/09.@1X.png");
+        width: 28px;
+        height: 30px;
+    }
+    .what__wrapper__list__item__subtitle{
+        @include font-style(10,400);
+        margin:9px 0 0 40px;
+        
+    }
+    .what__wrapper__button__text{
+        @include font-style(11,500);
+        color: $action-color;
+        margin:30px 0 24px 0;
+    }
+    .what_after__img{
+        display: block;
+        width: 347px;
+        height: 446px;
+        margin: 69px 0;
+    }
+    .what__wrapper__list{
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        align-content: center;
+        margin-top: 30px;
+    }
+    .what__wrapper__button{
+        width: 174px;
+        margin: 0;
+    }
+    .what__wrapper__button__btn{
+        width: 190px;
+        padding: 11px 17px;
+        @include font-style(11,700);
+        color: $label-color;
+        margin:0 0 0 30px;
+        box-shadow: 0px 3px 4px rgba(0,0,0,0.2);
+    }
+.what__wrapper__button__text:before{
+    background-image: url("../images/Shape\ 10@1X\ \(2\).png");
+    width: 20px;
+    height: 23px;
+    margin-right:10px;
+}
+.what-it{
+    width: 50px;
+}
+}

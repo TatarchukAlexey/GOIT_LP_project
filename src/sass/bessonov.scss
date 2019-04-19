@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'Acrom-Bold';
+    src: url(../fonts/Acrom-Bold.woff);
+}
+@font-face{
+    font-family: 'Acrom-ExtraBold';
+    src: url(../fonts/Acrom-ExtraBold.woff);
+}
+@font-face{
+    font-family: 'Acrom-Light';
+    src: url(../fonts/Acrom-Light.woff);
+}
+@font-face{
+    font-family: 'Acrom-Medium';
+    src: url(../fonts/Acrom-Medium.woff);
+}
+@font-face{
+    font-family: 'Acrom-Regular';
+    src: url(../fonts/Acrom-Regular.woff);
+}
+@font-face{
+    font-family: 'Acrom-Thin';
+    src: url(../fonts/Acrom-Thin.woff);
+}
+.bessonov-container{
+    margin: 0.9375rem auto 1.75rem;
+    padding: 0 16px;
+}
+.bessonov-container__block{
+    margin-left: 5.0625rem;
+    position: relative;
+}
+.bessonov-container__block::before{
+    content: "GO";
+    font-size: 5.0625rem;
+    color: rgba(247, 247, 247, 255);
+    font-family: 'Acrom-ExtraBold';
+    transform: rotate(-270deg);
+    position: absolute;
+    z-index: -1;
+    left: -6.625rem;
+    top: 0.625rem;
+}
+.bessonov-container__block__h1{
+    font-size: 1.125rem;
+    color: rgba(0, 0, 0, 255);
+    font-family: 'Acrom-Bold';
+    padding-bottom: 0.75rem;
+}
+
+.bessonov-container__block__p{
+    font-size: 0.6875rem;
+    color: rgba(0, 0, 0, 255);
+    font-family: 'Acrom-Medium';
+    padding-bottom: 1.375rem;
+    display: flex;
+    align-items: flex-start;
+}
+.bessonov-container__block__p::before{
+    content: "";
+    width: 1.4375rem;
+    height: 0.1875rem;
+    background-color: black;
+    display: block;
+    margin-top: 0.3125rem;
+    margin-right: 0.5625rem;
+}
+.bessonov-container__block__button{
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 255);
+    padding: 0.6875rem 1.6875rem;
+    background-color: #ff6b08;
+    font-family: 'Acrom-ExtraBold';
+    border: 0 solid;
+}
+.bessonov-container__block2{
+    margin-top: 1.75rem;
+    // margin-left: 3.0625rem;
+}
+.bessonov-container__block2__h2{
+    font-size: 1.125rem;
+    color: rgba(0, 0, 0, 255);
+    font-family: 'Acrom-ExtraBold';
+    padding-bottom: 0.4375rem;
+}
+.bessonov-container__block2__p-one{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 255);
+    font-family: 'Acrom-Bold';
+    padding-bottom: 1.1875rem;
+}
+.bessonov-container__block2__p-two{
+    font-size: 0.875rem;
+    color: rgba(63, 65, 68, 255);
+    font-family: 'Acrom-Regular';
+    padding-bottom: 1.125rem;
+}
+.bessonov-container__block2__p-three{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 255);
+    font-family: 'Acrom-Regular';
+}
+.bessonov-container__block2__p-three::after{
+    content: "Выбор за тобой …";
+    font-size: 0.875rem;
+    color: rgba(255, 107, 8, 255);
+    font-family: 'Acrom-Medium';
+    display: block;
+    text-align: right;
+    padding-top: 1.125rem;
+}
+
+@media(min-width:480px){
+    .bessonov-container{
+        margin: 0.9375rem 4rem 1.75rem;
+        padding: 0 0.625rem;
+    }
+    .bessonov-container__block{
+        margin-left: 5.0625rem;
+        position: relative;
+    }
+    .bessonov-container__block2{
+        font-size: 1.25rem;
+        margin-left: 1.0625rem;
+    }
+    .bessonov-container__block__button{
+        text-align: center;
+    }
+}
+@media(min-width:768px){
+    .bessonov-container{
+        display: flex;
+        max-width: 39.9375rem;
+        margin-top: 2.6875rem;
+        justify-content: space-around;
+    }
+    .bessonov-container__block{
+        position: relative;
+        margin: 0;
+    }
+    .bessonov-container__block::before{
+        left: 8.125rem;
+        content: "GO";
+        font-size: 9.577rem;
+        color: rgba(247, 247, 247, 255);
+        font-family: 'Acrom-ExtraBold';
+        transform: rotate(-270deg);
+        position: absolute;
+        z-index: -1;
+    }
+    .bessonov-container__block2{
+        margin: 0 0 0 5rem;
+    }
+    .bessonov-container__block__h1{
+        font-size: 2.125rem;
+    }
+}
+@media(min-width:960px){
+    .bessonov-container{
+        max-width: 49.9375rem;
+    }
+    .bessonov-container__block{
+        max-width: 22.0625rem;
+    }
+    .bessonov-container__block::before{
+        left: 8.4375rem;
+        content: "GO";
+        font-size: 10.577rem;
+        color: rgba(247, 247, 247, 255);
+        font-family: 'Acrom-ExtraBold';
+        transform: rotate(-270deg);
+        position: absolute;
+        z-index: -1;
+    }
+    .bessonov-container__block__h1{
+        font-size: 2.125rem;
+    }
+    .bessonov-container__block__p{
+        font-size: 1rem;
+    }
+    .bessonov-container__block2{
+        max-width: 19.125rem;
+    }
+    .bessonov-container__block2__h2{
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 255);
+        font-family: 'Acrom-ExtraBold';
+        padding-bottom: 0.4375rem;
+        position: absolute;
+        left: 29.375rem;
+    }
+}
+@media(min-width:1200px){
+    .bessonov-container{
+        max-width: 44.5rem;
+        margin: 3.125rem auto;
+    }
+    .bessonov-container__block::before{
+        left: 6.875rem;
+    }
+    .bessonov-container__block__p{
+        font-size: 0.7rem;
+        max-width: 16.5625rem;
+    }
+    .bessonov-container__block2__h2{
+        left: 35.999rem;
+    }
+    .bessonov-container__block2__p-one{
+        font-size: 0.85rem;
+    }
+    .bessonov-container__block2__p-two{
+        font-size: 0.8rem;
+    }
+    .bessonov-container__block2__p-three{
+        font-size: 0.85rem;
+    }
+}
+@media(min-width:1440px){
+    .bessonov-container{
+        max-width: 53.375rem;
+        margin: 3.625rem auto;
+    }
+    .bessonov-container__block{
+        max-width: 23.5625rem;
+    }
+    .bessonov-container__block__h1{
+        padding-bottom: 2rem;
+    }
+    .bessonov-container__block__p{
+        padding-bottom: 2.625rem;
+    }
+    .bessonov-container__block2{
+        max-width: 20.4375rem;
+    }
+    .bessonov-container__block2__h2{
+        left: 45.999rem;
+    }
+    .bessonov-container__block::before{
+        font-size: 11.577rem;
+        top: 1.25rem;
+    }
+    .bessonov-container__block2__p-one{
+        max-width: 18.875rem;
+        font-size: 1rem;
+    }
+    .bessonov-container__block2__p-two{
+        max-width: 16.6875rem;
+        font-size: 0.9rem;
+    }
+    .bessonov-container__block2__p-three{
+        max-width: 18.8125rem;
+        font-size: 1rem;
+    }
+}

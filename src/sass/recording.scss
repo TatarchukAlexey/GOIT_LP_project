@@ -1,0 +1,209 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.recording {
+    position: relative;
+    margin: 0 auto;
+    width: 12.25rem;
+    text-align: center;
+    
+    &__title{  
+        text-align: center;     
+        @include font-style(14, 900);
+        text-transform: uppercase;
+        padding-bottom: 3.75%;
+        margin-top: 30px;
+        }
+        
+    &__text{
+        @include font-style(10, 700);
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        margin: 0 0 9% 8%;
+        }
+    }
+    .recording__text::before{
+        content: "";
+        display: block;
+        position: relative;
+        left: -1rem;
+        top: 0.5rem;
+        width: 0.625rem;
+        height: 0.125rem;
+        background-color:$primary-color;            
+        }
+    .recording__text--blue{
+        @include font-style(10, 700);
+        background-color:$mark-color;
+    }
+    .foto__pic{
+    margin-bottom: 12.245%;
+}
+
+.list{  
+    &__item{
+        list-style: square outside;
+        width: 11.75rem;
+        text-align: left;
+        margin-bottom: 6%;
+        position: relative;
+        left: 0.5rem;
+    }
+    &__item--name{
+        @include font-style(10, 900);
+        text-transform: uppercase;
+        color: $primary-color;
+        margin-bottom: 0.09%;
+    }
+    
+    &__item--info{
+        @include font-style(10, 400);
+        color: $grey-color;
+    }
+}  
+@media (min-width: 26.625rem){
+    .recording {
+        width: 18.375rem;
+    &__title{    
+        @include font-style(18, 900);
+        } 
+    &__text{
+        @include font-style(12, 700);
+        }
+    }
+    .recording__text--blue{
+        @include font-style(12, 700);
+    }
+    .list{  
+    &__item{
+        list-style: square outside;
+        width: 17rem;
+        left: 1rem;
+    }
+    &__item--name{
+        @include font-style(12, 900);
+        }
+    &__item--info{
+        @include font-style(12, 400);
+    }
+    }
+}
+
+@media (min-width: 48rem){
+    .recording {
+        width: 631px;
+       
+    &__title{    
+        @include font-style(27, 900);
+        text-align: left;
+        margin: 12% 0% 0 61%;    
+        padding-bottom: 1rem; 
+        } 
+    &__text{
+        @include font-style(8, 700);
+        margin:0 0 4% 69%; 
+        }
+    }
+    .recording__text--blue{
+        @include font-style(8, 700);
+    }
+    .foto__pic{
+        position: absolute;
+        top: 1.5%;
+        left: 4%;
+        margin-bottom: 0%;
+    }
+    .list{  
+    &__item{
+        list-style: square outside;
+        width: 35%;
+        left: 3%;
+        margin: 0 3.2% 1% 61%; 
+        @include font-style(18);
+    }
+    &__item--name{
+        @include font-style(10, 900);
+        display: inline-block;
+        vertical-align: middle;
+        }
+    &__item--info{
+        @include font-style(8, 500);
+        color: $primary-color;
+    }
+    }
+    .recording__text::before{
+        left: -3rem;
+        top: 0.6rem;
+        width: 1.8125rem;
+        height: 0.25rem;
+    }
+    .list__item:nth-child(3)>.list__item--name{
+        @include font-style(12, 700);
+    }
+}
+@media (min-width: 60rem){
+    .recording {
+        width: 49.25rem;
+    &__title{    
+        margin: 10.5% 0% 0 61%;    
+        } 
+    &__text{
+        @include font-style(10, 700);
+        margin:0 0 1% 69%;
+        }
+    }
+    .recording__text--blue{
+        @include font-style(10, 700);
+    }
+    .recording__text::before{
+        top: 0.8rem;
+         }
+    .list{
+        &__item{
+        margin: 0 3% 2% 61%;   
+        @include font-style(25); 
+    }
+}
+}
+@media (min-width: 75rem){
+    .recording {
+        width: 44.3125rem;
+    &__title{    
+        @include font-style(27, 900);
+        text-align: left;
+        margin: 10.5% 0% 0 61%;    
+        padding-bottom: 1%; 
+        } 
+    }
+    .foto__pic{
+        position: absolute;
+        top: 1.5%;
+        left: 4%;
+        margin-bottom: 0%;
+    }
+    .list{  
+    &__item{
+        width: 35%;
+        left: 3%;
+        margin: 0 3% 1% 61%; 
+    }
+}   
+}
+@media (min-width: 90rem){
+    .recording {
+        width: 53.25rem;
+    &__title{    
+        @include font-style(30, 900);
+    }
+    &__text{
+        margin:0 0 3% 69%;
+        }
+    }
+    .list{  
+    &__item{
+        margin: 0 3% 2.5% 61%; 
+    }
+}
+}

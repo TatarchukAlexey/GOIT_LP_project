@@ -1,0 +1,596 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.study{
+    padding: 1.5rem 1rem;
+
+    &--main_title{    
+    @include font-style(12, 800);
+    text-transform: uppercase;
+    width: 251px;
+    margin: 0 auto 10px;
+    }
+    &_biggest{
+        width: 195px;
+        margin: auto;
+
+        &--title{
+            margin-bottom: 5px;
+
+        }
+
+        &--paragraph{
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    &_numberone::before{
+        content: "";
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: #000000;
+        margin: 6px 4px 0 0;
+    }
+    &_numberone{
+        display: flex;
+        width: 195px;
+        margin: 0 auto 24px;
+
+        &--paragraph{
+        width: 175px;
+        @include font-style(9, 500);
+        }
+    }
+
+    &_goforit{
+        position: relative;
+        width: 195px;
+        margin: auto;
+
+        &--image{    
+            position: absolute;
+            right: 0;
+            width: 53px;
+        }
+        &--sub_title{
+            width: 122px;
+        }
+        &--paragraph{
+            margin-bottom: 24px;
+        }
+    }
+
+    &_recognized{
+        width: 195px;
+        margin: auto;
+
+        &--list{
+            list-style: none;
+
+            &_item{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                margin-bottom: 24px;
+                
+
+                &_image1{
+                    width: 27px;
+                }
+                &_image2{
+                    width: 36px;
+                }
+                &_title{
+                    width: 110px;
+                }
+            }
+        }
+    }
+
+
+    &--paragraph{
+        @include font-style(9, 400);
+    }
+    &--title{
+        @include font-style(10, 500);
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    &--sub_title{
+        @include font-style(9, 900);
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+
+    .study{
+
+        &--main_title{
+            font-size: 18px;
+            width: 376px;
+            margin-bottom: 16px;
+        }
+        &_biggest,
+        &_numberone,
+        &_goforit,
+        &_recognized{
+            width: 290px;
+        }
+
+        &_biggest{
+            &--title{
+                margin-bottom: 10px;
+            }
+            &--paragraph {
+                margin-bottom: 36px;
+            }
+        }
+
+        &--image {
+            margin-bottom: 56px;
+        }
+
+        &_numberone::before {
+            margin: 9px 8px 0 0;
+            width: 20px;
+            height: 4px;
+        }
+
+        &_numberone{
+            margin-bottom: 32px;
+        }
+        &_numberone--paragraph {
+            width: 260px;
+            font-size: 13px;
+        }
+
+        &_goforit--image {
+            width: 80px;
+        }
+        &_goforit--paragraph {
+            margin-bottom: 40px;
+        }
+        &_recognized--list_item_image1 {
+            width: 41px;
+        }
+        &_recognized--list_item_image2 {
+            width: 54px;
+        }
+        &_recognized--list_item_title {
+            width: 165px;
+        }
+
+        &--paragraph,
+        &--title,
+        &--sub_title{
+            font-size: 13px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+
+    .study--main_title span,
+    .study_biggest span,
+    .study_numberone--paragraph span{
+        display: block;
+    }
+
+    .study{
+        padding: 3rem 4rem;
+        
+        &_header{
+            width: 640px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &--main_title{
+            line-height: 1.23;
+            font-size: 27px;
+            width: 227px;
+            margin: 0;
+        }
+
+        &_aside {
+            width: 346px;
+        }
+
+        &_biggest {
+            display: flex;
+            width: 345px;
+            margin: 0;
+
+            &--title{
+                margin-left: 33px;
+                width: 93px;
+            }
+            &--paragraph{
+                margin-left: 19px;
+                width: 120px;
+            }
+        }
+
+        &--image {
+            margin-bottom: 6px;
+        }
+
+        &_numberone::before {
+            margin: 4px 18px 0 0;
+            width: 29px;
+            height: 4px;
+        }
+
+        &_numberone {
+            position: relative;
+            bottom: 42px;
+            width: 201px;
+            margin: 0 0 24px;
+
+            &--paragraph {
+                width: 155px;
+            }
+        }
+
+        &_footer{
+            width: 640px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_goforit{
+            width: 140px;
+            margin: 0;
+
+            &--image{
+                width: 58px;
+                z-index: -1;
+            }
+            &--sub_title{
+                margin-bottom: 10px;
+            }
+        }
+        &_recognized{
+            width: 475px;
+            margin: 0;
+
+            &--list{
+            display: flex;
+            justify-content: space-between;
+
+                &_item{
+                    width: 150px;
+                    justify-content: space-between;
+
+                    &_image1,
+                    &_image2{
+                        width: 56px;
+                        position: relative;
+                        top: -16px;
+                    }
+                    &_title {
+                        width: 55px;
+                        margin-bottom: 10px;
+                    }
+                    &_para{
+                        width: 88px;
+                    }
+                }
+            }
+        }
+
+        &--paragraph,
+        &--title{
+            font-size: 8px;
+        }
+        &--sub_title{
+            font-size: 9px;
+        }
+        &--title{
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+@media (min-width: 960px){
+    .study{
+        
+        &_header,
+        &_footer{
+            width: 800px;
+        }
+
+        &--main_title{
+            width: 284px;
+            font-size: 34px;
+        }
+
+        &_aside {
+            width: 432px;
+        }
+
+        &_biggest {
+            &--title {
+                margin-left: 41px;
+                width: 114px;
+            }
+            &--paragraph {
+                margin-bottom: 31px;
+                margin-left: 23px;
+                width: 150px;
+            }
+        }
+
+        &_numberone::before {
+            margin: 5px 23px 0 0;
+            width: 36px;
+            height: 5px;
+        }
+
+        &_numberone {
+            position: relative;
+            bottom: 52px;
+            width: 251px;
+            margin: 0 0 24px;
+
+            &--paragraph {
+                width: 192px;
+                font-size: 11px;
+            }
+        }
+
+        &_goforit {
+            width: 173px;
+
+            &--image {
+                width: 73px;
+            }
+            &--sub_title {
+                width: 150px;
+            }
+        }
+
+        &_recognized {
+            width: 596px;
+
+            &--list {
+
+                &_item {
+                    width: 185px; 
+
+                    &_image1,
+                    &_image2{
+                        width: 69px;
+                    }
+                    &_title {
+                        width: 68px;
+                        margin-bottom: 10px;
+                    }
+                    &_para{
+                        width: 107px;
+                    }
+
+                }
+            }
+        }
+
+        &--paragraph,
+        &--title{
+            font-size: 10px;
+        }
+        &--sub_title{
+            font-size: 11px;
+        }
+        &--title{
+            margin-bottom: 26px;
+        }
+
+    }
+}
+
+@media (min-width: 1200px){
+    .study{
+        
+        &_header,
+        &_footer{
+            width: 715px;
+        }
+
+        &--main_title{
+            width: 252px;
+            font-size: 30px;
+        }
+
+        &_aside {
+            width: 386px;
+        }
+
+        &_biggest {
+            &--title {
+                margin-left: 37px;
+                width: 103px;
+            }
+            &--paragraph {
+                margin-bottom: 28px;
+                margin-left: 21px;
+                width: 134px;
+            }
+        }
+
+        &_numberone::before {
+            margin: 5px 23px 0 0;
+            width: 36px;
+            height: 5px;
+        }
+
+        &_numberone {
+            position: relative;
+            bottom: 52px;
+            width: 251px;
+            margin: 0 0 20px;
+
+            &--paragraph {
+                width: 172px;
+                font-size: 10px;
+            }
+        }
+
+        &_goforit {
+            width: 153px;
+
+            &--image {
+                width: 64px;
+            }
+            &--sub_title {
+                width: 135px;
+            }
+        }
+
+        &_recognized {
+            width: 530px;
+
+            &--list {
+
+                &_item {
+                    width: 165px; 
+
+                    &_image1,
+                    &_image2{
+                        width: 62px;
+                    }
+                    &_title {
+                        width: 61px;
+                        margin-bottom: 10px;
+                    }
+                    &_para{
+                        width: 97px;
+                    }
+
+                }
+            }
+        }
+
+        &--paragraph,
+        &--title{
+            font-size: 9px;
+        }
+        &--sub_title{
+            font-size: 10px;
+        }
+        &--title{
+            margin-bottom: 21px;
+        }
+
+    }
+}
+
+@media (min-width: 1440px){
+    .study{
+        
+        &_header,
+        &_footer{
+            width: 855px;
+        }
+
+        &--main_title{
+            width: 303px;
+            font-size: 36px;
+        }
+
+        &_aside {
+            width: 462px;
+        }
+
+        &_biggest {
+            width: 365px;
+
+            &--title {
+                margin-left: 44px;
+                width: 125px;
+            }
+            &--paragraph {
+                margin-bottom: 34px;
+                margin-left: 25px;
+                width: 175px;
+            }
+        }
+
+        &_numberone::before {
+            margin: 5px 25px 0 0;
+            width: 38px;
+            height: 5px;
+        }
+
+        &_numberone {
+            position: relative;
+            bottom: 52px;
+            width: 267px;
+            margin: 0 0 20px;
+
+            &--paragraph {
+                width: 214px;
+                font-size: 12px;
+            }
+        }
+
+        &_goforit {
+            width: 185px;
+
+            &--image {
+                width: 77px;
+            }
+            &--sub_title {
+                width: 162px;
+            }
+        }
+
+        &_recognized {
+            width: 638px;
+
+            &--list {
+
+                &_item {
+                    width: 200px; 
+
+                    &_image1,
+                    &_image2{
+                        width: 74px;
+                    }
+                    &_title {
+                        width: 74px;
+                        margin-bottom: 10px;
+                    }
+                    &_para{
+                        width: 118px;
+                    }
+
+                }
+            }
+        }
+
+        &--paragraph,
+        &--title{
+            font-size: 11px;
+        }
+        &--sub_title{
+            font-size: 12px;
+        }
+        &--title{
+            margin-bottom: 26px;
+        }
+
+    }
+}
